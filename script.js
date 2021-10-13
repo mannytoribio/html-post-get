@@ -25,11 +25,11 @@ fetch('https://bc-clothes.web.app/products')
 getClothes()
 
 function clearForm() {
-  document.getElementById('brand').value = '',
-  document.getElementById('color').value = '',
-  document.getElementById('style').value = '',
-  document.getElementById('type').value = '',
-  document.getElementById('price').value = '',
+  document.getElementById('brand').value = ''
+  document.getElementById('color').value = ''
+  document.getElementById('style').value = ''
+  document.getElementById('type').value = ''
+  document.getElementById('price').value = ''
   document.getElementById('sku').value = ''
 }
 
@@ -42,7 +42,7 @@ function addClothes(event) {
    style: document.getElementById('style').value,
    type: document.getElementById('type').value,
    price: document.getElementById('price').value,
-   sku: document.getElementById('sku').value,
+   sku: document.getElementById('sku').value
   }
   fetch('https://bc-clothes.web.app/products', {
     method: 'POST',
